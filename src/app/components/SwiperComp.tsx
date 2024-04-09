@@ -8,13 +8,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import Button from './Button';
-import SingleSlide from './SingleSlide';
 
 export default function SwiperComp() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
-    <div className="w-full px-[15px] lg:px-[5%] xl:px-[10%]  flex flex-col ld:gap-8 gap-4 ">
+    <div className="w-full px-[15px] lg:px-[47px] xl:px-[10%]  flex flex-col ld:gap-8 gap-4 ">
       <div className="w-full flex justify-between items-center">
         <div className="flex gap-2 xl:gap-4 items-center justify-center">
           <div className="flex items-center justify-center gap-1 xl:gap-2">
@@ -74,7 +73,7 @@ export default function SwiperComp() {
           600: {
             slidesPerView: 2,
           },
-          400: {
+          450: {
             slidesPerView: 1.5,
           },
           0: {
