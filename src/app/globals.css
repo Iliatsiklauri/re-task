@@ -5,28 +5,7 @@
 .swiper-button-disabled {
   opacity: 0.4;
 }
-.swiper-button-enabled {
-  background: yellow;
-}
-.btn {
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.06);
-}
-.viewAll {
-  background: rgba(255, 255, 255, 0.06);
-}
+
 .item {
   background: linear-gradient(181deg, rgba(0, 0, 0, 0.38) -22.46%, #000 99.14%);
-}
-.sec1 {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
-}
-@media screen and (width < 400px) {
-  .sec1 {
-    background: rgba(158, 158, 158, 0.15);
-  }
 }
