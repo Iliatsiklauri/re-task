@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import Button from './Button';
+import { NavigationOptions } from 'swiper/types';
 
 export default function SwiperComp() {
   const navigationPrevRef = useRef(null);
@@ -56,12 +57,11 @@ export default function SwiperComp() {
           nextEl: navigationNextRef.current,
         }}
         onInit={(swiper) => {
-          if (swiper.params.navigation) {
-            swiper.params.navigation.prevEl = navigationPrevRef.current;
-            swiper.params.navigation.nextEl = navigationNextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }
+          const navigation = swiper.params.navigation as NavigationOptions;
+          navigation.prevEl = navigationPrevRef.current;
+          navigation.nextEl = navigationNextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
         }}
         breakpoints={{
           1024: {
