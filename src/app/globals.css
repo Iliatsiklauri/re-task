@@ -2,32 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.swiper-button-disabled {
+  opacity: 0.4;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.swiper-button-enabled {
+  background: yellow;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.06);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.viewAll {
+  background: rgba(255, 255, 255, 0.06);
+}
+.item {
+  background: linear-gradient(181deg, rgba(0, 0, 0, 0.38) -22.46%, #000 99.14%);
+}
+.sec1 {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
 }
