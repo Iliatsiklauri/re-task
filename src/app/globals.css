@@ -25,3 +25,8 @@
   background: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
 }
+@media screen and (width < 400px) {
+  .sec1 {
+    background: rgba(158, 158, 158, 0.15);
+  }
+}

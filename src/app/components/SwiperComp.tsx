@@ -10,6 +10,15 @@ import Image from 'next/image';
 import Button from './Button';
 import { NavigationOptions } from 'swiper/types';
 
+const arr = [
+  '/Rectangle 5304.png',
+  '/Rectangle 5305.png',
+  '/Rectangle 5304.png',
+  '/Rectangle 5305.png',
+  '/Rectangle 5304.png',
+  '/Rectangle 5305.png',
+];
+
 export default function SwiperComp() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
@@ -27,7 +36,7 @@ export default function SwiperComp() {
           </div>
           <Button />
         </div>
-        <nav className="flex items-center justify-center gap-3">
+        <nav className="flex items-center justify-center gap-2 lg:gap-3 ">
           <div ref={navigationPrevRef} className="btn flex items-center justify-center">
             <Image
               src={'/angle-right.png'}
@@ -82,126 +91,30 @@ export default function SwiperComp() {
         }}
         className="w-full  flex relative lg:h-[270px] h-[255px]"
       >
-        <SwiperSlide className="relative">
-          <Image
-            alt="background"
-            src={'/Rectangle 5305.png'}
-            fill
-            className="z-0 rounded-[15px]"
-          />
-          <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
-            <div className="flex flex-col items-start justify-between">
-              <p className="text-[14px]">Concert</p>
-              <p className="text-lg font-medium">Monkey Summer</p>
-              <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center ">
-              <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
-                <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
-                Music
+        {arr.map((el, key) => (
+          <SwiperSlide className="relative" key={key}>
+            <Image alt="background" src={`${el}`} fill className="z-0 rounded-[15px]" />
+            <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
+              <div className="absolute text-[10px] bg-[#FFC700] text-black font-medium  top-0 right-0 m-[15px]  px-[15px] rounded-[30px]">
+                from 150 GEL
               </div>
-              <div className="sec1  px-5 text-[10px]  font-medium">
-                TBILISI CONCERT HALL
+              <div className="flex flex-col items-start justify-between">
+                <p className="text-[14px]">Concert</p>
+                <p className="text-lg font-medium">Monkey Summer</p>
+                <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="relative">
-          <Image
-            alt="background"
-            src={'/Rectangle 5304.png'}
-            fill
-            className="z-0 rounded-[15px]"
-          />
-          <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
-            <div className="flex flex-col items-start justify-between">
-              <p className="text-[14px]">Concert</p>
-              <p className="text-lg font-medium">Monkey Summer</p>
-              <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center ">
-              <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
-                <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
-                Music
-              </div>
-              <div className="sec1  px-5 text-[10px]  font-medium">
-                TBILISI CONCERT HALL
+              <div className="flex gap-2 items-center justify-center ">
+                <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
+                  <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
+                  Music
+                </div>
+                <div className="sec1  px-5 text-[10px]  font-medium">
+                  TBILISI CONCERT HALL
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="relative">
-          <Image
-            alt="background"
-            src={'/Rectangle 5305.png'}
-            fill
-            className="z-0 rounded-[15px]"
-          />
-          <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
-            <div className="flex flex-col items-start justify-between">
-              <p className="text-[14px]">Concert</p>
-              <p className="text-lg font-medium">Monkey Summer</p>
-              <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center ">
-              <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
-                <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
-                Music
-              </div>
-              <div className="sec1  px-5 text-[10px]  font-medium">
-                TBILISI CONCERT HALL
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="relative">
-          <Image
-            alt="background"
-            src={'/Rectangle 5304.png'}
-            fill
-            className="z-0 rounded-[15px]"
-          />
-          <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
-            <div className="flex flex-col items-start justify-between">
-              <p className="text-[14px]">Concert</p>
-              <p className="text-lg font-medium">Monkey Summer</p>
-              <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center ">
-              <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
-                <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
-                Music
-              </div>
-              <div className="sec1  px-5 text-[10px]  font-medium">
-                TBILISI CONCERT HALL
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="relative">
-          <Image
-            alt="background"
-            src={'/Rectangle 5305.png'}
-            fill
-            className="z-0 rounded-[15px]"
-          />
-          <div className="z-20 text-lg text-white absolute flex items-start justify-end flex-col w-full h-full  p-[15px]  gap-3 item rounded-[15px]">
-            <div className="flex flex-col items-start justify-between">
-              <p className="text-[14px]">Concert</p>
-              <p className="text-lg font-medium">Monkey Summer</p>
-              <p className="text-[12px]">Factory Tbilisi, Monday 22:00</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center ">
-              <div className="flex items-center justify-center gap-[10px] px-5  sec1 text-[10px] ">
-                <Image alt="music" src={'/Group 152.png'} width={10} height={10} />
-                Music
-              </div>
-              <div className="sec1  px-5 text-[10px]  font-medium">
-                TBILISI CONCERT HALL
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
