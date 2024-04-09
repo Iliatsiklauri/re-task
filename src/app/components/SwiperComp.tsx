@@ -23,7 +23,7 @@ export default function SwiperComp() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
-    <div className="w-full px-[15px] lg:px-[47px] xl:px-[10%]  flex flex-col lg:gap-8 gap-4">
+    <div className="w-full px-[15px]  md:w-[80%]   flex flex-col lg:gap-8 gap-4">
       <div className="w-full flex justify-between items-center">
         <div className="flex gap-2 xl:gap-4 items-center justify-center">
           <div className="flex items-center justify-center gap-1 xl:gap-2">
