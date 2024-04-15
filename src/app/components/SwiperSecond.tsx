@@ -136,7 +136,7 @@ export default function SwiperSecond({ text }: { text: string }) {
                   from 150 GEL
                 </div>
               </div>
-              <div className="flex flex-col items-start  justify-center px-[15px] py-[15px]  sm:gap-1">
+              <div className="flex flex-col items-start  justify-center px-[10px] py-[12px] sm:px-[15px] sm:py-[15px]  sm:gap-1">
                 <h2 className="text-[14px] font-medium text-white ">Monkey Summer</h2>
                 <h2 className="text-[#8D8D8D] font-300 text-xs">Factory Tbilisi</h2>
                 <h2 className="text-[#FFC700] text-xs">Monday, 22:00</h2>
