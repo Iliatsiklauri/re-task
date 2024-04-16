@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function RouteGo() {
   return (
-    <div className="md:w-[80%]  py w-full  px-[15px]">
-      <div className="py-5 md:py-[27px] roudned-[20px] lg:py-[25px] w-full bg-[#222] rounded-[20px] flex justify-between items-center px-[5%] md:px-[3%]  md:gap-0 relative ">
+    <div className="md:w-[80%]  py w-full  px-[15px] ">
+      <div className="py-5 md:py-[27px] roudned-[20px] lg:py-[25px] w-full shadow bg-[#222] rounded-[20px] flex justify-between items-center px-[5%] md:px-[3%]  md:gap-0 relative ">
         <div className="absolute left-[10%] md:left-[20%] h-full">
           <div className="relative h-full w-[110px] md:w-[135px]">
             <Image alt="bgTicket" src={'/Group 131.png'} fill />
