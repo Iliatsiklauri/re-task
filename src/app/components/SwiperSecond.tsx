@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { NavigationOptions } from 'swiper/types';
 import Image from 'next/image';
-import Button from './Button';
 import SwiperHeader from './SwiperHeader';
 
 const arr = [

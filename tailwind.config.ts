@@ -14,6 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
+        forlogo: 'rgba(141, 141, 141, 0.06)',
         brown: 'rgba(255, 255, 255, 0.06)',
         lightBrown: ' rgba(255, 255, 255, 0.3)',
         lightest: 'rgba(158, 158, 158, 0.15)',
