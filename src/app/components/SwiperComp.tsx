@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import Button from './Button';
 import { NavigationOptions } from 'swiper/types';
+import SwiperHeader from './SwiperHeader';
 
 const arr = [
   '/Rectangle 5304.png',
@@ -24,45 +25,12 @@ export default function SwiperComp() {
   const navigationNextRef = useRef(null);
   return (
     <div className="w-full px-[15px]  md:w-[80%]   flex flex-col lg:gap-8 gap-4">
-      <div className="w-full flex justify-between items-center">
-        <div className="flex gap-2 xl:gap-4 items-center justify-center">
-          <div className="flex items-center justify-center gap-1 xl:gap-2">
-            <div className="w-[14px] h-[14px] lg:w-7 lg:h-7 relative">
-              <Image alt="star" src={'/star.png'} fill />
-            </div>
-            <h2 className="text-white sm:text-[16px] xl:text-lg font-medium">
-              Recommended
-            </h2>
-          </div>
-          <Button />
-        </div>
-        <nav className="flex items-center justify-center gap-2 lg:gap-3 ">
-          <div
-            ref={navigationPrevRef}
-            className="flex bg-brown h-[30px] w-[30px] rounded-[30px] cursor-pointer items-center justify-center"
-          >
-            <Image
-              src={'/angle-right.png'}
-              alt="arrow"
-              width={18}
-              height={18}
-              className="rotate-180"
-            />
-          </div>
-          <div
-            ref={navigationNextRef}
-            className="bg-brown h-[30px] w-[30px] rounded-[30px] cursor-pointer  flex items-center justify-center"
-          >
-            <Image
-              src={'/angle-right.png'}
-              alt="arrow"
-              width={18}
-              height={18}
-              className=""
-            />
-          </div>
-        </nav>
-      </div>
+      <SwiperHeader
+        next={navigationNextRef}
+        prev={navigationPrevRef}
+        text={`Recommended`}
+        star={true}
+      />
       <Swiper
         slidesPerView={3}
         modules={[Navigation]}

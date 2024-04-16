@@ -10,6 +10,7 @@ import 'swiper/css/scrollbar';
 import { NavigationOptions } from 'swiper/types';
 import Image from 'next/image';
 import Button from './Button';
+import SwiperHeader from './SwiperHeader';
 
 const arr = [
   {
@@ -48,39 +49,8 @@ export default function SwiperSecond({ text }: { text: string }) {
   const prev = useRef(null);
   const next = useRef(null);
   return (
-    <div className="w-full px-[15px] md:w-[80%] flex flex-col md:gap-8 gap-4">
-      <div className="w-full flex justify-between items-center">
-        <div className="flex gap-2 xl:gap-4 items-center justify-center">
-          <h2 className="text-white sm:text-[16px] xl:text-lg font-medium">{text}</h2>
-          <Button />
-        </div>
-        <nav className="flex items-center justify-center gap-2 lg:gap-3 ">
-          <div
-            ref={prev}
-            className="flex bg-brown h-[30px] w-[30px] rounded-[30px] cursor-pointer items-center justify-center"
-          >
-            <Image
-              src={'/angle-right.png'}
-              alt="arrow"
-              width={18}
-              height={18}
-              className="rotate-180"
-            />
-          </div>
-          <div
-            ref={next}
-            className="bg-brown h-[30px] w-[30px] rounded-[30px] cursor-pointer  flex items-center justify-center"
-          >
-            <Image
-              src={'/angle-right.png'}
-              alt="arrow"
-              width={18}
-              height={18}
-              className=""
-            />
-          </div>
-        </nav>
-      </div>
+    <div className="w-full px-[15px] md:w-[80%] flex flex-col lg:gap-8 gap-4">
+      <SwiperHeader next={next} prev={prev} text={`${text}`} />
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -118,7 +88,7 @@ export default function SwiperSecond({ text }: { text: string }) {
         {arr.map((el, key) => (
           <SwiperSlide key={key} className="bg-[#222] rounded-[15px]">
             <div className="h-full flex flex-col justify-between items-start">
-              <div className="relative  w-full lg:h-[60%] h-[70%] ">
+              <div className="relative  w-full h-[70%] ">
                 <Image
                   alt="background"
                   src={`${el.lg}`}
