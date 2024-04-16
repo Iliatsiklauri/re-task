@@ -1,4 +1,5 @@
 import Footer from './components/Footer';
+import RouteGo from './components/RouteGo';
 import SwiperBottom from './components/SwiperBottom';
 import SwiperComp from './components/SwiperComp';
 import SwiperSecond from './components/SwiperSecond';
@@ -10,6 +11,7 @@ export default function Home() {
         <SwiperComp />
         <SwiperSecond text="Discover" />
         <SwiperSecond text="Second hand tickets" />
+        <RouteGo />
         <SwiperBottom />
       </div>
       <Footer />

@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
-import Button from './Button';
 import { NavigationOptions } from 'swiper/types';
 import SwiperHeader from './SwiperHeader';
 
@@ -24,7 +23,7 @@ export default function SwiperComp() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
-    <div className="w-full px-[15px]  md:w-[80%]   flex flex-col lg:gap-8 gap-4">
+    <div className="w-full px-[15px]  md:w-[80%]  flex flex-col lg:gap-8 gap-4">
       <SwiperHeader
         next={navigationNextRef}
         prev={navigationPrevRef}
