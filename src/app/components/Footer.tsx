@@ -3,9 +3,9 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="w-full">
-      <div className="w-full bg-[#222] flex items-center  justify-between  py-[38px] lg:y-[35px] px-[15px] flex-col">
-        <div className="md:w-[80%]  w-full flex justify-center md:justify-between items-center h-full ">
+    <div className="w-full ">
+      <div className="w-full  flex items-center bg-[#161616] lg:bg-[#222]  justify-between  py-[38px] lg:py-[35px] px-[15px] flex-col">
+        <div className="md:w-[80%]  w-full flex justify-center md:justify-between items-center ">
           <div className="items-start justify-center gap-10 hidden md:flex">
             <Image alt="Qrcode" src={'/footer/QR Code.svg'} width={92} height={92} />
             <h2 className="text-white text-[16px] font-[500] leading-[25px] w-[180px]">
@@ -14,8 +14,8 @@ export default function Footer() {
             </h2>
           </div>
 
-          <div className="flex md:justify-center items-start  md:gap-[30px] w-full md:w-auto justify-between lg:gap-10 ">
-            <div className="flex flex-col items-start justify-between gap-[17px] ">
+          <div className="flex md:justify-center items-start  md:gap-[30px] w-full md:w-auto justify-between lg:gap-10">
+            <div className="flex flex-col items-start justify-between gap-[17px]">
               <p className="underline text-[#8D8D8D] text-xs font-medium">About Us</p>
               <p className="underline text-[#8D8D8D] text-xs font-medium">
                 Terms and Privacy
@@ -25,8 +25,8 @@ export default function Footer() {
                 Ticket Refund
               </p>
             </div>
-            <div className="flex flex-col items-start justify-between  gap-6">
-              <div className="flex flex-col items-start justify-center gap-[15px] lg:gap-[17px] ">
+            <div className="flex flex-col items-start justify-between  gap-7">
+              <div className="flex flex-col items-start justify-center gap-[17px]">
                 <p className="text-[#8D8D8D] text-xs font-medium">
                   Contacts: +995 555 567 891
                 </p>
@@ -55,8 +55,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="h-1 bg-black w-full flex items-center justify-center py-[10px]">
-        <p className="text-white text-[10px]">2023 All rights reserved</p>
+      <div className=" bg-black w-full flex items-center justify-center py-[10px]">
+        <p className="text-[#F2F2F2] text-[10px] leading-normal">
+          2023 All rights reserved
+        </p>
       </div>
     </div>
   );

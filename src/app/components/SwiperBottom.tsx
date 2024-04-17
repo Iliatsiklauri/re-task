@@ -29,7 +29,7 @@ export default function SwiperBottom() {
   const prev = useRef(null);
   const next = useRef(null);
   return (
-    <div className="w-full bg-[#222] flex items-center justify-center px-[15px] py-8 lg:pt-5 xl:py-5">
+    <div className="w-full bg-customCol lg:bg-[#222] flex items-center justify-center px-[15px] py-8 lg:pt-5 xl:py-5">
       <div className="w-full  md:w-[80%] flex flex-col lg:gap-8 gap-4  items-center justify-center">
         <SwiperHeader next={next} prev={prev} text="Our partners" />
         <Swiper

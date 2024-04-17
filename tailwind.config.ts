@@ -18,6 +18,7 @@ const config: Config = {
         brown: 'rgba(255, 255, 255, 0.06)',
         lightBrown: ' rgba(255, 255, 255, 0.3)',
         lightest: 'rgba(158, 158, 158, 0.15)',
+        customCol: ' rgba(255, 199, 0, 0.03)',
       },
     },
   },

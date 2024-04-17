@@ -6,7 +6,7 @@ import SwiperSecond from './components/SwiperSecond';
 
 export default function Home() {
   return (
-    <div className="w-full  flex items-center justify-center gap-8 lg:gap-[60px] xl:gap-[70px]  bg-[#161616] flex-col">
+    <div className="w-full  flex items-center justify-center gap-0 lg:gap-[60px] xl:gap-[70px]  bg-[#161616] flex-col">
       <div className="flex  w-full flex-col items-center justify-center gap-8 md:gap-10">
         <SwiperComp />
         <SwiperSecond text="Discover" />
